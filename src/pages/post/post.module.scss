@@ -1,1 +1,94 @@
-// TODO
+@keyframes spinning {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+
+  div {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    border: 1rem solid var(--pink-500);
+    border-left: 1rem solid transparent;
+    margin-bottom: 3rem;
+    animation-name: spinning;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 25rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    h1 {
+      font-size: 3rem;
+      color: var(--gray-100);
+      line-height: 3.625rem;
+      letter-spacing: -0.031rem;
+    }
+
+    div {
+      margin-top: 1.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--gray-100);
+  }
+}
+
+.postContent {
+  font-size: 1.125rem;
+  color: var(--gray-100);
+  line-height: 2rem;
+
+  p, ul {
+    margin: 1.5rem 0;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+}

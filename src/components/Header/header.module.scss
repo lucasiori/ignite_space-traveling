@@ -1,1 +1,12 @@
-// TODO
+.headerContainer {
+  div {
+    max-width: 47.75rem;
+    display: flex;
+    padding: 2.5rem 2rem;
+    margin: 0 auto;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

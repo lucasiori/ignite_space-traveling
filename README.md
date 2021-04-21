@@ -22,7 +22,7 @@
 <p>
   <ul>
     <li>Home page: onde são listados os posts do blog</li>
-    <li>Post page: onde você consegue realizar a leitura completa do post</li>
+    <li>Post page: onde é exibido o conteúdo completo do post</li>
   </ul>
 </p>
 
